@@ -1,0 +1,174 @@
+    body
+        {
+            background: rgb(94, 94, 204);
+            color: red;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+           
+            background: black;
+            background-image: url("images/pokemon2.jpg");
+            /*background-repeat: no-repeat;*/
+            background-position: center;
+            background-size: 100%;
+            height: 250px;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .pokemons {
+            
+            background: lightgreen ;
+            color: grey;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .pokemons figure {
+            margin: auto;
+            width: 200px;
+        }
+
+        .pokemons figure img {
+            width: 200px;
+        
+        }
+
+        ul{
+             margin: 0;
+            padding: 0;
+            list-style-type: none;
+            }
+            li {
+                display: inline-block;
+                margin-right: 20px ;
+
+            }
+            
+            
+
+            header .logo a{
+                
+                background-image: url("images/pikachu2.png");
+                background-size: 100px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 100px;
+                text-indent: -999999;
+                top: 0px;
+                position : relative;
+                height: 200px;
+            }
+
+        footer {
+            background :white;
+            color: grey;
+            font-size: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .mobile{
+            display: none;
+        }
+        .b {
+           /* display: inline-block;*/
+           position: relative;
+           top: 10px;
+            background-color: lightgreen;
+            
+            
+            border-radius: 3px;
+            padding: 2px;
+            margin-left: 20px;
+        }
+
+        .b:first-child{
+            margin-left: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .b:hover{
+            background-color: red;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        
+        @media screen and (max-width: 800px) {
+
+            
+
+            .pokemons {
+                background: lightgoldenrodyellow;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            header .logo a{
+                background-image: url("images/pikachu2.png");
+                background-size: 100px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 200px;
+                text-indent: -999999;
+                top: 19px;
+                right: -38px;
+                position : relative;
+                height: 200px;
+            }
+
+        h1{
+            width: 130px;
+            text-align: center;
+            display: inline-block;
+            background-position: centre;
+            background-color: black;
+            position: relative;
+            top: -60px;
+        }
+
+            header{
+                height: 250px;
+            }
+
+            .mobile{
+                display: inline-block;
+            }
+            
+            .desktop{
+                display:none;
+            }
+            .pokemons {
+                
+                background: lightblue;
+            }
+            .pokemons {
+            
+                background: lightgreen ;
+                color: grey;
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+            }
+            .pokemons figure {
+                margin: auto;
+                width: 100px;
+            }
+    
+            .pokemons figure img {
+                width: 100px;
+            
+            }
+            .pokemons figure figcaption {
+                font-size: 9px;
+            }
+        }
